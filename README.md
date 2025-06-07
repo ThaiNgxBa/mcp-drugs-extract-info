@@ -10,12 +10,11 @@ source venv/bin/activate #On Windows .\venv\Scripts\activate
 
 pip install -r requirements.txt
 
-### Launch the inspector:
+#Add dependencies
+uv add anthropic python-dotenv nest_asyncio
 
-# Install Node.js before execute the command
-npx @modelcontextprotocol/inspector uv run drugs_research.py
+# Run the chatbot
+uv run mcp_chatbot.py
 
-# If you get a message asking "need to install the following packages", type: `y`
-
-# You will get a message saying that the MCP inspector is up and running at a specific address. To open the inspector, click on that given address. The inspector will open in another tab.
-# Once you're done with the inspector UI, make sure to close the inspector by typing `Ctrl+C` in the terminal below.
+# To exit the chatbot
+# type "quit" in the terminal

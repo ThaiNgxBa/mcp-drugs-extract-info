@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+mcp_drugs_extract_info.egg-info/PKG-INFO
+mcp_drugs_extract_info.egg-info/SOURCES.txt
+mcp_drugs_extract_info.egg-info/dependency_links.txt
+mcp_drugs_extract_info.egg-info/entry_points.txt
+mcp_drugs_extract_info.egg-info/requires.txt
+mcp_drugs_extract_info.egg-info/top_level.txt
