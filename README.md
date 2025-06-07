@@ -16,6 +16,4 @@ pip install -r requirements.txt
 
 ### Start Jupyter Notebook:
 
-jupyter notebook
-
-
+jupyter notebook #Start AI-chatbot-drugs-research.ipynb
