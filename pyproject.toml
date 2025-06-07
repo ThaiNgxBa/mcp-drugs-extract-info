@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-drugs-extract-info"
+version = "0.1.0"
+description = "Drug research tool using MCP and openFDA API"
+readme = "README.md"
+requires-python = ">=3.12.3"
+dependencies = [
+    "requests>=2.25.0",
+    "python-dotenv>=0.19.0",
+    "anthropic>=0.20.0",
+    "nest-asyncio>=1.5.0",
+    "fastmcp>=0.1.0",
+    "mcp>=1.9.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+
+[project.scripts]
+drugs-research = "drugs_research:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["tests*", ".venv*", "drug_search*"]

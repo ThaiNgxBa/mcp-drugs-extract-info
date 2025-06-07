@@ -1,0 +1,2 @@
+[console_scripts]
+drugs-research = drugs_research:main

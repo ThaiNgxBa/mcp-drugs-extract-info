@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: mcp-drugs-extract-info
+Version: 0.1.0
+Summary: Drug research tool using MCP and openFDA API
+Requires-Python: >=3.12.3
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: anthropic>=0.20.0
+Requires-Dist: nest-asyncio>=1.5.0
+Requires-Dist: fastmcp>=0.1.0
+Requires-Dist: mcp>=1.9.1
+Provides-Extra: dev
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: ipykernel>=6.0.0; extra == "dev"
+
+# Set up a Virtual Environment for Your Project
+
+### 🛠️ Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate #On Windows .\venv\Scripts\activate
+
+### Install packages:
+
+pip install -r requirements.txt
+
+### Launch the inspector:
+
+# Install Node.js before execute the command
+npx @modelcontextprotocol/inspector uv run drugs_research.py
+
+# If you get a message asking "need to install the following packages", type: `y`
+
+# You will get a message saying that the MCP inspector is up and running at a specific address. To open the inspector, click on that given address. The inspector will open in another tab.
+# Once you're done with the inspector UI, make sure to close the inspector by typing `Ctrl+C` in the terminal below.
