@@ -1,9 +1,5 @@
 # Set up a Virtual Environment for Your Project
 
-First, create a `.ipynb` file in your working directory.
-
-Then, open a terminal in that folder and follow these steps:
-
 ### 🛠️ Create a virtual environment:
 
 ```bash
@@ -14,6 +10,12 @@ source venv/bin/activate #On Windows .\venv\Scripts\activate
 
 pip install -r requirements.txt
 
-### Start Jupyter Notebook:
+### Launch the inspector:
 
-jupyter notebook #Start AI-chatbot-drugs-research.ipynb
+# Install Node.js before execute the command
+npx @modelcontextprotocol/inspector uv run drugs_research.py
+
+# If you get a message asking "need to install the following packages", type: `y`
+
+# You will get a message saying that the MCP inspector is up and running at a specific address. To open the inspector, click on that given address. The inspector will open in another tab.
+# Once you're done with the inspector UI, make sure to close the inspector by typing `Ctrl+C` in the terminal below.
